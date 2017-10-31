@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "163546252172",
+    "firebase_url": "https://heyjoe-563df.firebaseio.com",
+    "project_id": "heyjoe-563df",
+    "storage_bucket": "heyjoe-563df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163546252172:android:68960e545b69aa4b",
+        "android_client_info": {
+          "package_name": "org.nativescript.HeyJoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163546252172-gkpa1hugj655olgnf8l82gdriu32cash.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Ag1wRbkpGV4fv1m0ZLu2JGhRRFWtj5I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163546252172:android:e3c63aad3be12b70",
+        "android_client_info": {
+          "package_name": "com.gritstaffing.heyjoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163546252172-leedgtg9lafd4vmec31htpv7ic2df775.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gritstaffing.heyjoe",
+            "certificate_hash": "7a9303d5961925b8d8bd1a2f1af709ea74e7744e"
+          }
+        },
+        {
+          "client_id": "163546252172-gkpa1hugj655olgnf8l82gdriu32cash.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Ag1wRbkpGV4fv1m0ZLu2JGhRRFWtj5I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163546252172-fhjsbcv9f5ib6fdat8tb63jl7g2o0vuj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.nativescript.HeyJoe"
+              }
+            },
+            {
+              "client_id": "163546252172-gkpa1hugj655olgnf8l82gdriu32cash.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
