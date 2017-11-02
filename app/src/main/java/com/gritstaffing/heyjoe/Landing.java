@@ -14,6 +14,8 @@ import android.widget.Toast;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+
 public class Landing extends Activity implements View.OnClickListener{
     private FirebaseDatabase database;
     private DatabaseReference users;
@@ -43,11 +45,17 @@ public class Landing extends Activity implements View.OnClickListener{
         if(v == mSoonButton) {
             FirebaseDatabase databaseNow = FirebaseDatabase.getInstance();
             DatabaseReference mRef = databaseNow.getReference("soon");
-            mRef.push().setValue(mUserName.getText().toString());
+            String userName = mUserName.getText().toString();
+            HashMap<String, Object> user = new HashMap<>();
+            user.put("Name", userName);
+            mRef.push().setValue(user);
         } else if (v == mNowButton) {
             FirebaseDatabase databaseNow = FirebaseDatabase.getInstance();
             DatabaseReference mRef = databaseNow.getReference("now");
-            mRef.push().setValue(mUserName.getText().toString());
+            String userName = mUserName.getText().toString();
+            HashMap<String, Object> user = new HashMap<>();
+            user.put("Name", userName);
+            mRef.push().setValue(user);
         } else if (v == mAdmin) {
             Intent intent = new Intent(this, Admin.class);
             startActivity(intent);
