@@ -82,7 +82,9 @@ public class Admin extends Activity implements View.OnClickListener{
 
     public void goToUserData() {
         Intent intent = new Intent(this, adminView.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
+        this.finish();
     }
 
     @Override
@@ -91,7 +93,10 @@ public class Admin extends Activity implements View.OnClickListener{
         Log.i("Current User", String.valueOf(FirebaseAuth.getInstance().getCurrentUser().getEmail()));
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if(user != null) {
-            Log.i("Success", "Dear Boy");
+            Intent intent = new Intent(this, adminView.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            this.finish();
         } else {
             Log.e("Admin", "User Not Found");
         }
